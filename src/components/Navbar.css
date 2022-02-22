@@ -1,0 +1,9 @@
+* {
+	margin: 1px;
+	padding: 1px;
+}
+.navbar{
+    color: rgb(255, 255, 255);
+    font-size: xx-large;
+    font-family: 'Poppins', sans-serif;
+}
