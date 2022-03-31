@@ -1,9 +1,9 @@
 pragma solidity ^0.5.0;
 
-contract DStorage {
+contract Blockdrive {
   
   // Name
-  string public name = 'DStorage';
+  string public name = 'Blockdrive';
 
   // Number of files
   uint public fileCount = 0;

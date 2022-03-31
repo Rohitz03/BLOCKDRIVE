@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { convertBytes } from './helpers';
 import moment from 'moment'
+import FileModal from './FileModal'
 import './Main.css';
-
 class Main extends Component {
 
   render() {
@@ -28,7 +28,8 @@ class Main extends Component {
                             required />
                       </div>
                       {/* <br></br> */}
-                    <input type="file" onChange={this.props.captureFile} className="text-white text-monospace"/>
+                      
+                    <input type="file"  onChange={this.props.captureFile} className="text-white text-monospace"/>
                     <form onSubmit={(event) => {
                     event.preventDefault()
                     const description = this.fileDescription.value
@@ -37,6 +38,7 @@ class Main extends Component {
                     <button type="submit" className="btn-primary btn-block"><b>Upload!</b></button>
                   </form>
               </div>
+              <FileModal/>
               <p>&nbsp;</p>
               <table className="table-sm table-bordered text-monospace" style={{ width: '1000px', maxHeight: '450px'}}>
                 <thead style={{ 'fontSize': '15 px' }}>
